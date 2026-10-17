@@ -1,0 +1,12 @@
+<div class="calculator-container">
+  <input [(ngModel)]="num1" type="number" placeholder="enter first number">
+  <select [(ngModel)]="option">
+    <option value="add">+</option>
+    <option value="subtract">-</option>
+    <option value="multiply">*</option>
+    <option value="divide">/</option>
+  </select>
+  <input [(ngModel)]="num2" type="number" placeholder="enter second number">
+  <button (click)="calculate()">=</button>
+  <div>{{ res() }}</div>
+</div>
